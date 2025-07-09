@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HomelyStay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    
+
+
+</head>
+<body background="">
+  <center>
+    <img src="./assests/logo.png"  style="height: 50px; width: auto; margin: 10px;"/>
+
+  </center>
+
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HomelyStay</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.html">Contact Us</a>
+              </li>
+              
+            </ul>
+            <!-- <span class="navbar-text">
+              <a href="../login.html">Logout</a>
+            </span> -->
+    
+            
+          </div>
+        </div>
+      </nav>
+
+      <center style="color: white; background-image: url('./assests/background-image.jpeg');">
+        <br><br><br>
+        <p class="h1">Welcome to HomelyStay</p>
+
+        <br><br>
+        <p class="h1">Find unique places to stay and things to do, all over the world.</p>
+
+        <div>
+
+        </div>
+
+
+        <div class="d-inline-flex p-2" > 
+            <form action="./login.html">
+                <input type="submit" class="btn btn-primary btn-lg shadow-lg" value="Login" style="margin: 20px;"/>
+            </form>
+            
+            
+            <form action="./signup/signup.html">
+                <input type="submit" class="btn btn-success btn-lg shadow-lg" value="Signup" style="margin: 20px;"/>
+            </form>
+        </div>
+
+        <p class="h2" style=" text-shadow: 2px 2px #5c5858;">Available Countries</p>
+
+        <div class="d-inline-flex p2">
+            <div class="shadow-lg p-3 card mb-3 text-start rounded-4" style="width: 18rem; margin: 20px;">
+                <img class="rounded-4 card-img-top" src="./assests/india.jpg" alt="Card image cap" style="height: 200px; width: 200px;">
+                <div class="card-body">
+                <h5 class="card-title">India</h5>
+                <p class="card-text">A vibrant land steeped in history, is famous for its festivals, delicious curries, and the majestic Monuments</p>
+            
+                </div>
+            </div>
+
+
+            <div class="shadow-lg p-3 card mb-3 text-start rounded-4" style="width: 18rem; margin: 20px;">
+                <img class="rounded-4 card-img-top" src="./assests/usa.jpg" alt="Card image cap" style="height: 200px; width: auto;">
+                <div class="card-body">
+                <h5 class="card-title">USA</h5>
+                <p class="card-text">The United States, a melting pot of cultures, is known for its megacities, Hollywood, and democratic system.</p>
+                
+                </div>
+            </div>
+
+            <div class="shadow-lg p-3 card mb-3 text-start rounded-4" style="width: 18rem; margin: 20px;">
+                <img class="rounded-4 card-img-top" src="./assests/canada.jpg" alt="Card image cap" style="height: 200px; width: auto;">
+                <div class="card-body">
+                <h5 class="card-title">Canada</h5>
+                <p class="card-text">Canada, vast with stunning landscapes, boasts maple syrup, hockey, and a long border with the United States.</p>
+                
+                </div>
+            </div>
+        </div>
+      </center>
+
+      
+      <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">&copy;</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-disabled="true">HomelyStay 2025-2035</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <script>
+        // Immediately hit the server URL when the page loads
+        (function() {
+          // Replace with your actual server URL
+          var serverUrl = "https://HomelyStay-backend.onrender.com/";
+    
+          // Use fetch to send a request to your server. This starts the wake-up process.
+          fetch(serverUrl)
+            .then(function(response) {
+              console.log("Server has been pinged. Status:", response.status);
+            })
+            .catch(function(error) {
+              console.error("Error pinging the server:", error);
+            });
+        })();
+      </script>
+
+
+</body>
+</html>
